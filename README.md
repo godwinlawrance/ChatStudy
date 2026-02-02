@@ -1,4 +1,5 @@
 # Ex. No:1b 			Study of Client Server Chat Applications
+## 21225220034
 
 ## Aim: 
 To perform a study on Client Server Chat Applications
@@ -73,6 +74,42 @@ Client-server chat applications are versatile tools that facilitate real-time co
 
 Client-server chat applications are foundational to real-time communication over networks. They incorporate principles of socket programming, communication protocols, and security mechanisms to provide a seamless user experience. Understanding the basics of client-server chat applications is essential for developers involved in networked application development, as they form the backbone of various collaborative communication systems. As technology evolves, chat applications continue to adapt, incorporating new features and technologies to enhance user interaction and connectivity.
 
+## Algorithm:
+    Step 1: Start
+    Step 2: Import the socket module
+    Step 3: Create a socket using IPv4 (AF_INET) and TCP (SOCK_STREAM)
+    Step 4: Bind the socket to IP address 127.0.0.1 and port number 12345
+    Step 5: Put the socket into listening mode
+    Step 6: Display message “Server is listening”
+    Step 7: Accept an incoming client connection
+    Step 8: Display message “Client connected”
+    Step 9: Repeat the following steps until client sends "exit"
+        a) Receive message from client
+        b) Display the received message
+        c) Read reply from server user
+        d) Send reply to the client
+    Step 10: Close the client socket
+    Step 11: Close the server socket
+    Step 12: Stop
+
+🔹 Algorithm: Client Side (clientside.py)
+    
+    Step 1: Start
+    Step 2: Import the socket module
+    Step 3: Create a socket using IPv4 (AF_INET) and TCP (SOCK_STREAM)
+    Step 4: Connect the socket to server IP 127.0.0.1 and port 12345
+    Step 5: Display message “Connected to server”
+    Step 6: Repeat the following steps until user enters "exit"
+        a) Read message from client user
+        b) Send message to the server
+        c) Receive reply from server
+        d) Display server reply
+    Step 7: Close the client socket
+    Step 8: Stop
+
+## Program and Output:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/88363cce-6faf-4c87-a96f-d180ad27d657" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/feaec4a3-fcdc-495a-b6b9-46fb3d3904bb" />
 
 ## Result:
 
